@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 # Install only the necessary runpod library
-RUN pip install --no-cache-dir runpod
+RUN pip install --no-cache-dir runpod boto3
 
 # Copy our mock handler into the root
 COPY handler.py /handler.py
